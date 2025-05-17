@@ -28,9 +28,19 @@
 # print(fact(int(input("enter the number:"))))
 
 
-def fact(x):
-    if x==1:
+# def fact(x):
+#     if x==1:
+#         return 1
+#     else:
+#         return (x*(fact(x-1)))
+# print(fact(int(input("ener the number:"))))
+
+
+def addition(number):
+    if number==1:
         return 1
     else:
-        return (x*(fact(x-1)))
-print(fact(int(input("ener the number:"))))
+        return (number+addition(number-1))
+total=addition(int(input()))
+print(total)
+
